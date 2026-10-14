@@ -1,6 +1,6 @@
 ---
 title: Love For Skateboarding
-date: 2026-06-01
+date: 2026-09-18
 cover: /img/zines/love-for-skateboarding.jpg
 description: 
 author: Fabian Scheidegger
