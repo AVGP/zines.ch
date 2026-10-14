@@ -1,0 +1,14 @@
+{
+  "name": "zines.ch",
+  "tagline": "A little library for Swiss zines",
+  "description": "zines.ch is a cozy zine library collecting self-published zines from Swiss zinemakers — and friends from everywhere else.",
+  "url": "https://zines.ch",
+  "lang": "en",
+  "formEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "nav": [
+    { "title": "Home", "url": "/" },
+    { "title": "Browse", "url": "/browse/" },
+    { "title": "Submit a zine", "url": "/submit/" },
+    { "title": "Contact", "url": "/contact/" }
+  ]
+}

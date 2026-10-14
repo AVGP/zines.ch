@@ -1,0 +1,37 @@
+---
+layout: base.njk
+---
+<article class="zine">
+  <figure class="zine-cover">
+    <img src="{{ cover }}" alt="Cover of {{ title }}" width="672" height="900">
+  </figure>
+  <div class="zine-info">
+    <p class="kicker"><a href="/browse/">← All zines</a></p>
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ description }}</p>
+    <dl class="specs">
+      <div><dt>Zinemaker</dt><dd>{% if author_link %}<a href="{{ author_link }}" rel="noopener">{{ author }} ↗</a>{% else %}{{ author }}{% endif %}{% if location %} ({{ location }}){% endif %}</dd></div>
+      <div><dt>Topic</dt><dd>{{ topic }}</dd></div>
+      <div><dt>Material</dt><dd>{{ material }}</dd></div>
+      <div><dt>Pages</dt><dd>{{ pages }} pages</dd></div>
+      <div><dt>Size</dt><dd>{{ size }}</dd></div>
+      <div><dt>Catalogued</dt><dd><time datetime="{{ page.date | isoDate }}">{{ page.date | niceDate }}</time></dd></div>
+    </dl>
+    <div class="prose">{{ content | safe }}</div>
+  </div>
+</article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": {{ title | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "image": "{{ site.url }}{{ cover }}",
+  "numberOfPages": {{ pages }},
+  "genre": {{ topic | dump | safe }},
+  "material": {{ material | dump | safe }},
+  "size": {{ size | dump | safe }},
+  "author": { "@type": "Person", "name": {{ author | dump | safe }}{% if author_link %}, "url": "{{ author_link }}"{% endif %} },
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
