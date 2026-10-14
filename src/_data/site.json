@@ -4,7 +4,8 @@
   "description": "zines.ch is a cozy zine library collecting self-published zines from Swiss zinemakers — and friends from everywhere else.",
   "url": "https://zines.ch",
   "lang": "en",
-  "formEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "submitFormEndpoint": "https://formspree.io/f/xnpjgkaw",
+  "contactFormEndpoint": "https://formspree.io/f/mljgpyer",
   "nav": [
     { "title": "Home", "url": "/" },
     { "title": "Browse", "url": "/browse/" },

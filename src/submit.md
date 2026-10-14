@@ -9,7 +9,7 @@ Made a zine? We'd love to see it. We focus on Swiss zinemakers, but everyone is 
 
 Fill in the form below. If it fits the library, we'll ask you to post us a copy so it can go on the shelf.
 
-<form class="form" action="{{ site.formEndpoint }}" method="post" enctype="multipart/form-data">
+<form class="form" action="{{ site.submitFormEndpoint }}" method="post" enctype="multipart/form-data">
 <input type="hidden" name="_subject" value="New zine submission">
 <label>Your name <input name="name" autocomplete="name" required></label>
 <label>Email <input type="email" name="email" autocomplete="email" required></label>
