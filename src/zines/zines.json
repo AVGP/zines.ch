@@ -1,0 +1,4 @@
+{
+  "layout": "zine.njk",
+  "permalink": "/zines/{{ page.fileSlug }}/"
+}
