@@ -18,12 +18,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="icon" type="image/svg+xml" href="/img/zineb.svg">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="logo" href="/">zines<span>.ch</span></a>
+  <a class="logo" href="/">
+    <img class="logo-mark" src="/img/zineb.svg" alt="" width="96" height="96">
+    <span>zines<em>.ch</em></span>
+  </a>
   <nav aria-label="Main">
     <ul role="list">
       {%- for item in site.nav %}

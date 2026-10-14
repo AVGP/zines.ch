@@ -83,19 +83,28 @@ p { margin: 0 0 1rem; max-width: var(--measure); }
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: .75rem 2rem;
-  padding: 1.5rem 0 1.25rem;
+  gap: 1rem 2rem;
+  padding: 1.1rem 0 1rem;
   border-bottom: 3px solid var(--ink);
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
   font-family: var(--display);
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   text-decoration: none;
   color: var(--blue);
   text-shadow: 2px 2px 0 var(--pink);
 }
-.logo span { color: var(--pink); text-shadow: 2px 2px 0 var(--blue); }
+.logo em { font-style: normal; color: var(--pink); text-shadow: 2px 2px 0 var(--blue); }
+.logo-mark {
+  width: 5.75rem;
+  height: 5.75rem;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+}
 
 .site-header ul { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: 0; padding: 0; list-style: none; }
 .site-header nav a {
