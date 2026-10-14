@@ -1,5 +1,5 @@
 ---
-title: Cleanest Room In The Apartment
+title: Cleanest Room In The Apartement
 date: 2026-08-08
 cover: /img/zines/cleanest-room-in-the-apartment.jpg
 description: A single-sheet 8-page mini zine on the bathroom of a shared flat in Basel.
