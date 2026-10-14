@@ -36,6 +36,6 @@ But a good zine is a good zine, so we happily shelve work from anywhere in the w
 
 ## Recently added
 
-{% zineGrid collections.zines, 6 %}
+{% zineGrid collections.zines, 3 %}
 
 <p class="more-link"><a class="button button-alt" href="/browse/">See all {{ collections.zines.length }} zines →</a></p>
